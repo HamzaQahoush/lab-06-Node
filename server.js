@@ -10,8 +10,9 @@ const PORT= process.env.PORT || 5000;
 server.use(cors());
 
 server.get('/', (req,res)=>{
-  res.send('Welcome To home page');
+  res.send('<h1> Welcome To home page </h1>');
 });
+
 server.get('/test', (req,res)=>{
   res.send('This is test page ');
 });
@@ -51,8 +52,8 @@ function Weather(dataW){
 
 }
 
-function convertDate(d){
-  let date = new Date (d);
+function convertDate(date){
+  let date = new Date (date);
 
   date = date.toDateString();
 
