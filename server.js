@@ -52,8 +52,8 @@ function Weather(dataW){
 
 }
 
-function convertDate(date){
-  let date = new Date (date);
+function convertDate(d){
+  let date = new Date (d);
 
   date = date.toDateString();
 
